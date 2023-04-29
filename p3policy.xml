@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<!--DOCTYPE PROPOSAL SYSTEM "http://privacy.linkexchange.com/xml/syntax.dtd" -->
+<PROPOSAL
+  xmlns:VOC="http://privacy.linkexchange.com/xml/vocab.dtd"
+  xmlns:DATA="http://privacy.linkexchange.com/xml/basedata.dtd"
+  realm="http://www.funds4schools.co.uk"
+  entity="www.funds4schools.co.uk"
+>
+<USES>
+  <STATEMENT VOC:purp="4 "
+   VOC:recpnt="0 "
+   VOC:id="1"
+   >
+    <DATA:REF category="0"/>
+    <DATA:REF category="1"/>
+  </STATEMENT>
+  <STATEMENT VOC:purp="1 "
+   VOC:recpnt="0 "
+   VOC:id="1"
+   >
+    <DATA:REF category="2"/>
+  </STATEMENT>
+  <STATEMENT VOC:purp="2 "
+   VOC:recpnt="0 "
+   VOC:id="0"
+   >
+    <DATA:REF category="7"/>
+  </STATEMENT>
+  <STATEMENT VOC:purp="1 "
+   VOC:recpnt="0 "
+   VOC:id="0"
+   >
+    <DATA:REF category="4"/>
+    <DATA:REF category="5"/>
+  </STATEMENT>
+</USES>
+<VOC:DISCLOSURE discURI="http://www.funds4schools.co.uk/privacy.asp"
+ access="1" other="0"/>
+</PROPOSAL>

@@ -1,0 +1,549 @@
+﻿/***********************************************/
+/* 3col_leftNav.css                             */
+/* Use with template 3col_leftNav.html          */
+/***********************************************/
+
+/***********************************************/
+/* HTML tag styles                             */
+/***********************************************/ 
+
+body{
+	font-family: Arial,sans-serif;
+	color: #333333;
+	line-height: 1.166;	
+	margin: 0px;
+	padding: 0px;
+	background-color:#FFFFFF;
+	
+}
+
+a{
+	color: #000000;
+	text-decoration: none;
+}
+
+a:link{
+	color: #000000;
+	text-decoration: none;
+}
+
+a:visited{
+	color: #006699;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #006699;
+	text-decoration: underline;
+}
+
+h1{
+ font-family: Verdana,Arial,sans-serif;
+ font-size: 120%;
+ color: #334d55;
+ margin: 0px;
+ padding: 0px;
+}
+
+h2{
+ font-family: Arial,sans-serif;
+ font-size: 114%;
+ color: #006699;
+ margin: 0px;
+ padding: 0px;
+}
+
+h3{
+ font-family: Arial,sans-serif;
+ font-size: 100%;
+ color: #334d55;
+ margin: 0px;
+ padding: 0px;
+}
+
+h4{
+ font-family: Arial,sans-serif;
+ font-size: 100%;
+ font-weight: normal;
+ color: #333333;
+ margin: 0px;
+ padding: 0px;
+}
+
+h5{
+ font-family: Verdana,Arial,sans-serif;
+ font-size: 100%;
+ color: #334d55;
+ margin: 0px;
+ padding: 0px;
+}
+
+ul{
+ list-style-type: square;
+}
+
+ul ul{
+ list-style-type: disc;
+}
+
+ul ul ul{
+ list-style-type: none;
+}
+
+label{
+ font-family: Arial,sans-serif;
+ font-size: 100%;
+ font-weight: bold;
+ color: #334d55;
+}
+
+
+/***********************************************/
+/* Layout Divs                                 */
+/***********************************************/
+
+#contentHolder {
+	width: 1000px;
+	margin: auto;
+	position: relative;
+	text-align: left;
+}
+
+#masthead{
+	padding: 90px 0px 0px 0px;
+	width: 1000px;
+	background: url(siteimages/bgimage.gif) no-repeat center top; 
+}
+
+#navBar{
+	float: left;
+	width: 175px;
+	margin: 0px;
+	padding: 0px;
+	background-color: #a6c5e3;
+	/*border-right: 1px solid #cccccc;*/
+	/*border-bottom: 1px solid #cccccc;*/
+}
+
+#headlines{
+  float:right;
+	width: 175px;
+	margin-left:5px
+}
+
+#content{
+  float: left;
+  width: 640px;
+  margin-left:5px;
+}
+
+/***********************************************/
+/* Components                                  */
+/***********************************************/
+
+#siteName{
+	margin: 0;
+	padding: 0 0 0 10px;
+	color:#669933;
+}
+
+
+/************* #globalNav styles **************/
+
+#globalNav{
+padding: 5px 0px 5px 10px;
+border: 1px solid #466C44;
+/*border-top: 2px solid #ffffff;*/
+color: #f9ab53;
+font-weight:bold;
+text-align:right;
+background-color:#669933;
+}
+
+#globalNav img{
+ display: inline;
+}
+
+#globalNav Form{
+ display: inline;
+ height:23px;
+}
+
+
+#globalNav a {
+	font-size: 90%;
+	padding: 0 4px 0 0;
+	color: white;
+}
+#globalNav a:hover {
+	font-size: 90%;
+	padding: 0 4px 0 0;
+	color:#f9ab53;
+}
+.whiteline {
+	background-color:white;
+	border-bottom: 3px solid #ffffff;
+}
+
+/*************** #pageName styles **************/
+
+#pageName{
+	margin: 0px;
+	padding: 0px 0px 0px 10px;
+}
+
+/************* #breadCrumb styles *************/
+
+#breadCrumb{
+	font-size: 80%;
+	padding: 2px 0px 0 10px;
+}
+
+
+/************** .feature styles ***************/
+
+.feature{
+	padding: 0px 0px 10px 10px;
+	font-size: 80%;
+}
+
+.feature h3{
+	padding: 30px 0px 5px 0px;
+	text-align: center;
+}
+
+.feature img{
+	float: left;
+	padding: 10px 10px 0px 0px;
+}
+
+
+/************** .story styles *****************/
+
+.story{
+	clear: both;
+	padding: 10px 0px 0px 10px;
+	font-size: 80%;
+}
+
+.story p{
+	padding: 0px 0px 10px 0px;
+}
+
+
+/************* #siteInfo styles ***************/
+
+#siteInfo{
+	clear: both;
+	border: 1px solid #466C44;
+	font-size: 75%;
+	color: #466C44;
+	padding: 10px 10px 10px 10px;
+}
+
+#siteInfo img{
+	padding: 4px 4px 4px 10px;
+	vertical-align: middle;
+}
+
+
+/************* #search styles ***************/
+
+#search{
+	padding: 5px 0px 5px 10px;
+	border: 1px solid #466C44;
+	background-color:#f9ab53;
+	font-size: 90%;
+}
+
+#search form{
+ margin: 0px;
+ padding: 0px;
+}
+
+#search label{
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/*********** #navBar link styles ***********/
+
+#navBar ul a:link, #navBar ul a:visited {display: block;}
+#navBar ul {list-style: none; margin: 0; padding: 0;}
+
+/* hack to fix IE/Win's broken rendering of block-level anchors in lists */
+#navBar li {border-bottom: 1px solid #ffffff;}
+
+/* fix for browsers that don't need the hack */
+html>body #navBar li {border-bottom: none;}
+
+
+/*********** #sectionLinks styles ***********/
+
+.sectionLinks{
+	position: relative;
+	margin: 0px;
+	padding: 50px 0 10px 0;
+	font-size: 90%;
+	border: 1px none #466C44;
+	background-image:url(siteimages/bglight.gif);
+	background-repeat:no-repeat;
+	background-position:top;
+	background-color:#99CC66;
+	color:#000000;
+}
+
+#navBar .sectionLinks li {
+	border-bottom:1px #99CC66 solid; 
+}
+
+.sectionLinks h3{
+	padding: 0px 0px 2px 10px;
+	color:#000000;
+}
+
+.sectionLinks a:hover{
+	background-color: #99CC66;
+	color:#000000;
+	font-weight:bold;
+}
+
+.sectionLinks img{
+	border:none;
+	width:10px;
+}
+/*********** .relatedLinks styles ***********/
+
+.relatedLinks{
+	position: relative;
+	margin: 0px;
+	padding: 56px 0 10px 0;
+	font-size: 90%;
+	border: 1px none #466C44;
+	background-image:url(siteimages/bgdark.gif);
+	background-repeat:no-repeat;
+	background-position:top;
+	background-color:#669933;
+	color:#ffffff;
+}
+
+.relatedLinks h3{
+	padding: 10px 0px 2px 0px;
+}
+
+#navBar .relatedLinks li {
+	border-bottom:1px #669933 solid; 
+}
+
+.relatedLinks a:hover{
+	background-color: #669933;
+	color:#ffffff;
+	font-weight:bold;
+}
+
+.relatedLinks a:link,
+.relatedLinks a:visited {
+	display: block; 
+}
+
+.relatedLinks img{
+	border:none;
+	width:10px;
+}
+
+
+/*********** .clearLinks styles ***********/
+
+.clearLinks {
+	position: relative;
+	margin: 0px;
+	padding: 0px 0px 10px 10px;
+	font-size: 90%;
+	border: 1px solid #ffffff;
+	background-color:white;
+}
+
+.clearLinks h3{
+	padding: 10px 0px 2px 0px;
+}
+
+.clearLinks a:link,
+.clearLinks a:visited {
+	display: block; 
+}
+/*********** .Last10 styles ***********/
+
+.Last10 {
+	position: relative;
+	margin: 0px;
+	padding: 0px 0px 5px 5px;
+	font-size: 75%;
+	border: 1px solid #466C44;
+	background-color:white;
+}
+
+.Last10 h3{
+	padding: 10px 0px 2px 0px;
+}
+
+.Last10 a:link,
+.Last10 a:visited {
+	display: block; 
+}
+
+/*********** #headlines link styles ***********/
+
+#headlines ul a:link, #headlines ul a:visited {display: block;}
+#headlines ul {list-style: none; margin: 0; padding: 0;}
+
+/* hack to fix IE/Win's broken rendering of block-level anchors in lists */
+#headlines li {border-bottom: 1px solid #ffffff;}
+
+/* fix for browsers that don't need the hack */
+html>body #headlines li {border-bottom: none;}
+
+
+/*********** .rightclearLinks styles ***********/
+
+.rightclearLinks {
+	position: relative;
+	margin: 0px;
+	font-size: 90%;
+	border: 1px solid #ffffff;
+	background-color:white;
+}
+
+.rightclearLinks h3{
+	background-image:url('siteimages/rightheader.gif');
+	background-repeat:no-repeat;
+	background-position:left top;
+	text-align:left;
+	height:25px;
+	padding-top:5px;
+}
+
+.rightclearLinks a:link,
+.rightclearLinks a:visited {
+	display: block; 
+}
+
+.rightclearLinks img{
+	border:none;
+	width:3px;
+}
+
+/************** #headlines styles **************/
+
+#headlines{
+	margin: 0 0 0 0px;
+	padding: 0px 0px 0px 0px;
+	font-size: 75%;
+	border: 0px none #466C44;
+}
+
+.newstores{
+	position: relative;
+	margin: 0px;
+	padding: 35px 0 10px 0;
+	font-size: 90%;
+	border: 1px none #466C44;
+	background-image:url(siteimages/bgnewstores.gif);
+	background-repeat:no-repeat;
+	background-position:top;
+	background-color:#ffffff;
+}
+
+.newstores h3{
+	padding: 10px 0px 2px 0px;
+}
+
+#headlines .newstores li {
+	border-bottom:1px #ffffff solid; 
+}
+
+.newstores a:hover{
+	background-color: #f9ab52;
+	color:#000000;
+}
+
+.newstores a:link,
+.newstores a:visited {
+	display: block; 
+}
+
+.newstores img{
+	border:none;
+	width:10px;
+}
+
+.topstores{
+	position: relative;
+	margin: 0px;
+	padding: 33px 0 10px 0;
+	font-size: 90%;
+	border: 1px none #466C44;
+	background-image:url(siteimages/bgtopstores.gif);
+	background-repeat:no-repeat;
+	background-position:top;
+	background-color:#ffffff;
+}
+
+.topstores h3{
+	padding: 10px 0px 2px 0px;
+}
+
+#headlines .topstores li {
+	border-bottom:1px #ffffff solid; 
+}
+
+.topstores a:hover{
+	background-color: #f9ab52;
+	color:#000000;
+}
+
+.topstores a:link,
+.topstores a:visited {
+	display: block; 
+}
+
+.topstores img{
+	border:none;
+	width:10px;
+}
+
+.categories{
+	position: relative;
+	margin: 0px;
+	padding: 40px 0 10px 0;
+	font-size: 90%;
+	border: 1px none #466C44;
+	background-image:url(siteimages/bgcategories.gif);
+	background-repeat:no-repeat;
+	background-position:top;
+	background-color:#ffffff;
+}
+
+.categories h3{
+	padding: 10px 0px 2px 0px;
+}
+
+#headlines .categories li {
+	border-bottom:1px #ffffff solid; 
+}
+
+.categories a:hover{
+	background-color: #f9ab52;
+	color:#000000;
+}
+
+.categories a:link,
+.categories a:visited {
+	display: block; 
+}
+
+.categories img{
+	border:none;
+	width:10px;
+}

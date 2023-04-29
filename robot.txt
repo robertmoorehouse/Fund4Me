@@ -1,0 +1,21 @@
+###############################
+#
+#
+User-agent: *
+#
+# list folders robots are not allowed to index 
+#
+Disallow: /_private/
+Disallow: /images/
+Disallow: /cms/
+Disallow: /cmsadmin/
+Disallow: /shoppin.net
+
+#
+# list specific files robots are not allowed to index
+#
+# Disallow: /directory/foo.html
+# Disallow: /folder2/whatever.html
+# 
+#
+###############################
